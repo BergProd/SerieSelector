@@ -1,0 +1,13 @@
+services:
+  pool-agent:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: pool-agent:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+    volumes:
+      - ./server/data:/app/data
+    restart: unless-stopped

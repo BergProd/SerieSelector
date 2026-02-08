@@ -1,0 +1,36 @@
+{
+  "roots": [
+    { "id": "root-tank", "name": "Tank", "path": "/mnt/tank" },
+    { "id": "root-backup", "name": "Backup", "path": "/mnt/backup" }
+  ],
+  "tree": {
+    "root-tank": {
+      "": [
+        { "name": "Movies", "type": "dir", "size": null, "mtimeMs": 1707331200000 },
+        { "name": "Series", "type": "dir", "size": null, "mtimeMs": 1707417600000 },
+        { "name": "notes.txt", "type": "file", "size": 2048, "mtimeMs": 1707504000000 }
+      ],
+      "Movies": [
+        { "name": "Interstellar.mkv", "type": "file", "size": 7340032000, "mtimeMs": 1707590400000 },
+        { "name": "Dune.mkv", "type": "file", "size": 6442450944, "mtimeMs": 1707676800000 }
+      ],
+      "Series": [
+        { "name": "TheExpanse", "type": "dir", "size": null, "mtimeMs": 1707763200000 }
+      ],
+      "Series/TheExpanse": [
+        { "name": "S01E01.mkv", "type": "file", "size": 1572864000, "mtimeMs": 1707849600000 }
+      ]
+    },
+    "root-backup": {
+      "": [
+        { "name": "Rescue", "type": "dir", "size": null, "mtimeMs": 1707936000000 }
+      ],
+      "Rescue": [
+        { "name": "2026-02-08", "type": "dir", "size": null, "mtimeMs": 1708022400000 }
+      ],
+      "Rescue/2026-02-08": [
+        { "name": "manifest.json", "type": "file", "size": 4096, "mtimeMs": 1708108800000 }
+      ]
+    }
+  }
+}
