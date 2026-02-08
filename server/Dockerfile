@@ -16,7 +16,6 @@ COPY package*.json ./
 RUN if [ -f package-lock.json ]; then npm ci --omit=dev; else npm install --omit=dev; fi
 
 COPY --from=build /app/dist ./dist
-COPY --from=build /app/data ./data
 
 EXPOSE 5000
 CMD ["node", "dist/app.js"]
